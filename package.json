@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.43",
     "framer-motion": "^12.19.2",

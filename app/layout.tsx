@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { GeistSans } from "geist/font";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
@@ -23,6 +24,7 @@ export default function RootLayout({
             {children}
           </main>
         </CartProvider>
+        <Analytics />
       </body>
     </html>
   );
