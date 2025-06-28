@@ -1,4 +1,4 @@
-# ��️ Cloudflex Store - Frontend Technical Test
+#  Cloudflex Store - Frontend Technical Test
 
 This project is a technical test for a Frontend Developer internship at Cloudflex. It's a product listing interface developed with Next.js, React and Tailwind CSS.
 
