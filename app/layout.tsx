@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import { GeistSans } from "geist/font";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
