@@ -26,7 +26,7 @@ export default function Home() {
             
             <a
               className="btn btn-outline btn-lg font-body"
-              href="https://github.com"
+              href="https://github.com/acelest/aubin-cloudflex/"
               target="_blank"
               rel="noopener noreferrer"
             >
