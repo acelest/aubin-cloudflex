@@ -1,16 +1,16 @@
 # 🛍️ Cloudflex Store - Frontend Technical Test
 
-Interface de listing de produits développée avec Next.js, React et Tailwind CSS pour le test technique Frontend Developer chez Cloudflex.
+Product listing interface developed with Next.js, React and Tailwind CSS for the Frontend Developer technical test at Cloudflex.
 
 ## 🚀 Technologies
 
-- **Next.js 15** - Framework React avec App Router
-- **React 19** - Bibliothèque UI
-- **TypeScript** - Typage statique
-- **Tailwind CSS** - Framework CSS utilitaire
-- **DaisyUI** - Composants UI
-- **Geist Font** - Police moderne
-- **Lucide React** - Icônes
+- **Next.js 15** - React framework with App Router
+- **React 19** - UI library
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Utility CSS framework
+- **DaisyUI** - UI components
+- **Geist Font** - Modern typography
+- **Lucide React** - Icons
 
 ## 📁 Project Structure
 
@@ -18,8 +18,8 @@ Interface de listing de produits développée avec Next.js, React et Tailwind CS
 aubin-cloudflex/
 ├── app/
 │   ├── components/
-│   │   ├── ProductCard.tsx      # Product card component
-│   │   ├── ProductGrid.tsx      # Product grid
+│   │   ├── ProductCard.tsx      # Product card with hover effects
+│   │   ├── ProductGrid.tsx      # Responsive product grid
 │   │   ├── Navbar.tsx           # Navigation with cart
 │   │   └── CartIcon.tsx         # Cart icon
 │   ├── context/
@@ -33,8 +33,7 @@ aubin-cloudflex/
 │   ├── globals.css              # Global styles
 │   ├── layout.tsx               # Main layout
 │   └── page.tsx                 # Home page
-├── public/                      # Static assets
-└── README.md                    # Documentation
+└── README.md
 ```
 
 ## ✨ Features
@@ -69,13 +68,8 @@ aubin-cloudflex/
 - **Desktop** : 3-4 columns
 - **Large Desktop** : 4 columns
 
-## 🛠️ Installation and Setup
+## 🛠️ Installation
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
 ```bash
 # Clone the project
 git clone <repository-url>
@@ -88,20 +82,11 @@ npm install
 npm run dev
 ```
 
-### Available Scripts
-```bash
-npm run dev      # Start development server
-npm run build    # Production build
-npm run start    # Start production server
-npm run lint     # Code linting
-```
-
 ## 🎯 Available Pages
 
 ### Home Page (`/`)
 - Project presentation
 - Link to products page
-- Technologies used
 
 ### Products Page (`/products`)
 - **Grid of 12 products** with filtering
@@ -157,11 +142,10 @@ interface Product {
 
 ## 🚀 Deployment
 
-The project is ready for deployment on:
-- **Vercel** (recommended for Next.js)
+Ready for deployment on:
+- **Vercel** (recommended)
 - **Netlify**
 - **Railway**
-- Any other platform supporting Node.js
 
 ## 📝 Technical Notes
 
@@ -179,7 +163,7 @@ The project is ready for deployment on:
 - Functional shopping cart
 - Unit tests
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Aubin Djou** - Frontend Developer
 
