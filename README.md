@@ -1,14 +1,16 @@
-# ��️ Cloudflex Store - Frontend Technical Test
+# 🛍️ Cloudflex Store - Frontend Technical Test
 
-This project is a technical test for a Frontend Developer internship at Cloudflex. It's a product listing interface developed with Next.js, React and Tailwind CSS.
+Interface de listing de produits développée avec Next.js, React et Tailwind CSS pour le test technique Frontend Developer chez Cloudflex.
 
-## 🚀 Technologies Used
+## 🚀 Technologies
 
-- **Next.js 15** - React framework with App Router
-- **React 19** - UI library
-- **TypeScript** - Static typing
-- **Tailwind CSS** - Utility CSS framework
-- **Unsplash Images** - Product images
+- **Next.js 15** - Framework React avec App Router
+- **React 19** - Bibliothèque UI
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Framework CSS utilitaire
+- **DaisyUI** - Composants UI
+- **Geist Font** - Police moderne
+- **Lucide React** - Icônes
 
 ## 📁 Project Structure
 
@@ -17,11 +19,15 @@ aubin-cloudflex/
 ├── app/
 │   ├── components/
 │   │   ├── ProductCard.tsx      # Product card component
-│   │   └── ProductGrid.tsx      # Product grid
+│   │   ├── ProductGrid.tsx      # Product grid
+│   │   ├── Navbar.tsx           # Navigation with cart
+│   │   └── CartIcon.tsx         # Cart icon
+│   ├── context/
+│   │   └── CartContext.tsx      # Global cart management
 │   ├── data/
 │   │   └── products.ts          # Product data
 │   ├── products/
-│   │   ├── page.tsx             # Product listing page
+│   │   ├── page.tsx             # Product listing page with filters
 │   │   └── [id]/
 │   │       └── page.tsx         # Product details page
 │   ├── globals.css              # Global styles
@@ -33,17 +39,29 @@ aubin-cloudflex/
 
 ## ✨ Features
 
-### ✅ Main Features
-- **`/products` page** - Responsive product grid
-- **`/products/[id]` page** - Product details page
-- **Responsive design** - Mobile-first with Tailwind CSS
-- **Dark mode** - Automatic theme support
-- **Smooth transitions** - Hover effects and animations
+### 🛒 Shopping System
+- **Context API** for global cart management
+- **Add/Remove** products
+- **Real-time counter** in the navbar
+- **Persistence** of data
 
-### 🎨 Reusable Components
-- `ProductCard` - Product card with hover effects
-- `ProductGrid` - Responsive product grid
-- Navigation between pages
+### 🏷️ "New" Badges
+- **Red badges** for new products
+- **Conditional display** based on the `isNew` property
+- **Star icons** for better visibility
+
+### 🔍 Filter System
+- **Category filtering** (Audio, Electronics, Accessories, Photography)
+- **Intuitive interface** with filter buttons
+- **Dynamic product counter**
+- **Transition animations**
+
+### 🎨 Enhanced Design
+- **Uniform cards** with fixed heights
+- **Advanced hover effects** on images
+- **Clickable images** to access details
+- **Fade-in animations** for cards
+- **Geist Font** modern and elegant
 
 ### 📱 Responsive Design
 - **Mobile** : 1 column
@@ -86,10 +104,10 @@ npm run lint     # Code linting
 - Technologies used
 
 ### Products Page (`/products`)
-- Grid of 8 products
-- Cards with image, name, price, category
-- "View Details" button for each product
-- Responsive design
+- **Grid of 12 products** with filtering
+- **Uniform cards** with hover effects
+- **Category filtering**
+- **"New" badges** for new products
 
 ### Product Details Page (`/products/[id]`)
 - Detailed product information
@@ -102,16 +120,16 @@ npm run lint     # Code linting
 
 ### Visual Effects
 - **Hover effects** on product cards
-- **Smooth transitions** (300ms)
-- **Transform scale** on buttons
-- **Shadow effects** for depth
-- **Image zoom** on hover
+- **Zoom on hover**
+- **Smooth transitions**
+- **Uniform cards** with fixed heights
+- **Colored badges** for categories
 
 ### Accessibility
-- **Focus states** on all interactive elements
-- **Alt text** for all images
-- **Contrast** respected for dark mode
 - **Keyboard navigation** supported
+- **Contrast** optimized
+- **Alt text** for images
+- **Focus states** visible
 
 ### Performance
 - **Optimized images** with Next.js Image
@@ -131,22 +149,11 @@ interface Product {
   description: string;
   image: string;
   category: string;
+  isNew?: boolean;
 }
 ```
 
-8 products are included with optimized Unsplash images.
-
-## 🔧 Customization
-
-### Adding a Product
-1. Modify `app/data/products.ts`
-2. Add a new Product object
-3. Use an Unsplash image with parameters `w=400&h=300&fit=crop`
-
-### Modifying Style
-- Use Tailwind classes in components
-- Modify `app/globals.css` for custom styles
-- Adjust colors in Tailwind theme
+12 products are included with optimized Unsplash images.
 
 ## 🚀 Deployment
 
@@ -174,7 +181,15 @@ The project is ready for deployment on:
 
 ## 👨‍💻 Author
 
-Developed for the Frontend Developer technical test at Cloudflex.
+**Aubin Djou** - Frontend Developer
+
+### Contact
+- **Portfolio** : [acelestdev.me](https://acelestdev.me)
+- **Site** : [acelest.dev](https://acelest.dev)
+- **Twitter** : [@acelestdev](https://twitter.com/acelestdev)
+- **LinkedIn** : [in/ledeveloppeuraubindjou](https://linkedin.com/in/ledeveloppeuraubindjou)
+- **Email** : aubingta@icloud.com
+- **Telegram** : [t.me/acelestdev](https://t.me/acelestdev)
 
 ---
 
